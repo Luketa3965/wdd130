@@ -27,9 +27,9 @@ h1 {
 }
 
 main img {
-    width: 150px;
+    width: 100px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 10px solid steelblue;
     padding: 2px;
     box-sizing: 0 0 30px gray;
 }
