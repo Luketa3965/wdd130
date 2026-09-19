@@ -1,11 +1,13 @@
-main {
-    max-width: 840px;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid rgba(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
