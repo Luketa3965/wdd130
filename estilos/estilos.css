@@ -1,6 +1,6 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,7 +9,6 @@ body {
     line-height: 1.5;
     color: #222;
     background: #fff;
-    margin: 0%;
 }
 
 nav {
@@ -29,9 +28,9 @@ h1 {
 main img {
     width: 100px;
     height: auto;
-    border: 10px solid steelblue;
+    border: 3px solid steelblue;
     padding: 2px;
-    box-sizing: 0 0 30px gray;
+    box-shadow: 0 0 10px gray;
 }
 
 p {
@@ -41,7 +40,7 @@ p {
 aside {
     width: 20em;
     margin: 1em;
-    border: 1px solid rgba(0 0 0 / 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
     background-color: #eee;
     color: #333;
@@ -49,8 +48,11 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    border: 4px solid steelblue;
+    padding: 4px;
+    box-shadow: 0 0 10px gray;
 }
 
 footer {
