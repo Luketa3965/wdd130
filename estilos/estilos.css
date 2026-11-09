@@ -1,62 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Configuração principal */
+main {
+    max-width: 840px;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    color: #222;
-    background: #fff;
-}
-
-nav {
-    background: steelblue;
-}
-
-nav a {
-    color: white;
-    padding: 10px;
-    display: block;
-}
-
-h1 {
-    color: steelblue;
-}
-
+/* Imagens dentro do conteúdo principal */
 main img {
-    width: 80px;
+    width: 150px;
     height: auto;
-    border: 3px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 10px gray;
 }
 
-p {
-    padding: 0;
-}
-
+/* Configuração do elemento aside */
 aside {
-    width: 300px;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1em;
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
 
+/* Imagem do aside */
 aside img {
-    width: 100%;
+    width: 200px;
     height: auto;
-    border: 4px solid steelblue;
-    padding: 4px;
-    box-shadow: 0 0 10px gray;
 }
 
+/* Parágrafos */
+p {
+    padding: 0;
+}
+
+/* Rodapé */
 footer {
-    margin-top: 1px;
-    border-top: 1em solid #000;
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
 }
