@@ -1,15 +1,15 @@
-/* Configuração principal */
+/* Limita a largura do conteúdo principal */
 main {
     max-width: 840px;
 }
 
-/* Imagens dentro do conteúdo principal */
+/* Imagem do perfil dentro do elemento main */
 main img {
     width: 150px;
     height: auto;
 }
 
-/* Configuração do elemento aside */
+/* Estilização da seção sobre o Brasil */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -20,18 +20,18 @@ aside {
     text-align: center;
 }
 
-/* Imagem do aside */
+/* Imagem dentro do aside */
 aside img {
     width: 200px;
     height: auto;
 }
 
-/* Parágrafos */
+/* Remove o preenchimento interno dos parágrafos */
 p {
     padding: 0;
 }
 
-/* Rodapé */
+/* Estilização do rodapé */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
