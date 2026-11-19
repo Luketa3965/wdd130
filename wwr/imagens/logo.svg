@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-labelledby="title">
+<title id="title">Logo White Water Rafting</title>
+<path d="M8 67 48 18l18 20L88 8l30 39 13-12 21 32H8Z" fill="#fff"/>
+<path d="m30 63 24-28 14 15 20-27 25 35" fill="none" stroke="#8dd9ed" stroke-width="5" stroke-linejoin="round"/>
+<path d="M7 79c25-14 43-14 68-2 24 12 48 10 78-3-16 25-41 34-72 26C49 91 27 88 7 79Z" fill="#10a8d0"/>
+<path d="M16 84c23-6 40-4 59 4 22 9 43 8 65-2" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<path d="M55 69h51l-8 14H65Z" fill="#073b5c"/>
+<circle cx="69" cy="61" r="5" fill="#073b5c"/><circle cx="86" cy="59" r="5" fill="#073b5c"/>
+</svg>
