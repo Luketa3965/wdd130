@@ -4,11 +4,7 @@
    Desenvolvido por Lucas Moreira Domingos
 ========================================= */
 
-
-/* =========================================
-   1. VARIÁVEIS CSS
-========================================= */
-
+/* 1. VARIÁVEIS CSS */
 :root {
     --cor-primaria: #073b5c;
     --cor-secundaria: #0d7896;
@@ -21,11 +17,7 @@
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-
-/* =========================================
-   2. RESET UNIVERSAL
-========================================= */
-
+/* 2. RESET UNIVERSAL */
 *,
 *::before,
 *::after {
@@ -34,11 +26,7 @@
     box-sizing: border-box;
 }
 
-
-/* =========================================
-   3. CONFIGURAÇÕES GERAIS
-========================================= */
-
+/* 3. CONFIGURAÇÕES GERAIS */
 html {
     scroll-behavior: smooth;
 }
@@ -51,6 +39,7 @@ body {
 }
 
 img {
+    display: block;
     max-width: 100%;
 }
 
@@ -64,11 +53,7 @@ h2 {
     line-height: 1.15;
 }
 
-
-/* =========================================
-   4. LARGURA E CENTRALIZAÇÃO
-========================================= */
-
+/* 4. LARGURA E CENTRALIZAÇÃO */
 .site-header,
 main,
 .site-footer {
@@ -76,11 +61,7 @@ main,
     margin: 0 auto;
 }
 
-
-/* =========================================
-   5. CABEÇALHO
-========================================= */
-
+/* 5. CABEÇALHO */
 .site-header {
     min-height: 104px;
     display: flex;
@@ -90,9 +71,7 @@ main,
     padding: 1rem 0;
 }
 
-
 /* LOGOTIPO */
-
 .brand {
     display: inline-flex;
     align-items: center;
@@ -123,11 +102,7 @@ main,
     font-size: 1.65rem;
 }
 
-
-/* =========================================
-   6. MENU DE NAVEGAÇÃO
-========================================= */
-
+/* 6. MENU DE NAVEGAÇÃO */
 .main-nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -144,8 +119,7 @@ main,
     text-decoration: none;
     font-size: 0.88rem;
     font-weight: 700;
-    transition: background-color 0.2s ease,
-                color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .main-nav a:hover,
@@ -154,11 +128,7 @@ main,
     color: var(--cor-primaria);
 }
 
-
-/* =========================================
-   7. HERO - IMAGEM PRINCIPAL
-========================================= */
-
+/* 7. HERO - IMAGEM PRINCIPAL */
 .hero {
     position: relative;
     min-height: 490px;
@@ -168,29 +138,22 @@ main,
     isolation: isolate;
 }
 
-/* Imagem de fundo */
-
 .hero .hero-image {
     position: absolute;
     inset: 0;
     z-index: -2;
-
-    display: block;
     width: 100%;
     height: 100%;
-
     object-fit: cover;
     object-position: center;
 }
 
-/* Sobreposição escura */
-
+/* SOBREPOSIÇÃO ESCURA */
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
-
     background: linear-gradient(
         90deg,
         rgba(3, 35, 55, 0.65),
@@ -198,11 +161,7 @@ main,
     );
 }
 
-
-/* =========================================
-   8. CONTEÚDO DO HERO
-========================================= */
-
+/* 8. CONTEÚDO DO HERO */
 .hero-content {
     width: auto;
     padding: 0;
@@ -210,142 +169,93 @@ main,
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
-
 /* TÍTULO SOBRE A IMAGEM */
-
 .hero h1 {
     position: absolute;
-
     top: 25px;
     left: 2rem;
-
     width: calc(100% - 4rem);
     padding: 16px 24px;
-
-    font-family: var(--fonte-titulo);
     font-size: clamp(2.5rem, 6vw, 4.3rem);
-
     text-align: center;
-
     color: #ffffff;
     background-color: rgba(7, 59, 92, 0.78);
-
     border-radius: 10px;
 }
 
-
 /* SUBTÍTULO */
-
 .hero-subtitle {
     position: absolute;
-
     top: 135px;
     left: 2rem;
-
     width: calc(100% - 4rem);
-
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
 }
 
-
-/* =========================================
-   9. ARTIGO - MISSÃO DA EMPRESA
-========================================= */
-
+/* 9. ARTIGO - MISSÃO DA EMPRESA */
 .hero article {
     position: absolute;
-
     left: 2rem;
     bottom: 1.8rem;
-
     width: min(600px, calc(100% - 4rem));
-
     padding: 1rem;
-
     border: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: 14px;
-
     background-color: rgba(255, 255, 255, 0.94);
-
     color: var(--cor-texto);
-
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
-
 /* IMAGEM DO ARTIGO */
-
 .hero article img {
     float: right;
-
     width: 125px;
     height: 112px;
-
     margin: 0 0 10px 15px;
-
     object-fit: cover;
-
     border-radius: 9px;
 }
 
-
 /* TEXTO DO ARTIGO */
-
 .hero article p {
     font-size: 0.88rem;
     line-height: 1.55;
 }
 
-
-/* =========================================
-   10. SEÇÃO HISTÓRIA
-========================================= */
-
+/* 10. SEÇÃO HISTÓRIA */
 .history-section {
     padding: 2.3rem 0 1.8rem;
 }
 
-
-/* TÍTULO DAS SEÇÕES */
-
+/* TÍTULOS DAS SEÇÕES */
 .section-heading {
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 1.25rem;
-
     margin-bottom: 1.35rem;
-
     text-align: center;
 }
 
 .section-heading span {
     height: 2px;
     flex: 1;
-
     background-color: var(--cor-verde);
 }
 
 .section-heading h2 {
     color: var(--cor-verde);
-
     font-size: clamp(1.8rem, 4vw, 2.6rem);
 }
 
-
 /* CONTEÚDO DA HISTÓRIA */
-
 .history-content {
     display: grid;
-
     grid-template-columns: 1.1fr 0.9fr;
-
     align-items: center;
-
     gap: 2rem;
 }
 
@@ -354,30 +264,18 @@ main,
 }
 
 .history-content img {
-    display: block;
-
     width: 100%;
     height: 220px;
-
     object-fit: cover;
-
     border-radius: 12px;
-
     box-shadow: 0 8px 22px rgba(7, 59, 92, 0.13);
 }
 
-
-/* =========================================
-   11. SEÇÃO DE AVENTURA
-========================================= */
-
+/* 11. SEÇÃO DE AVENTURA */
 .adventure-section {
     margin: 0.3rem 0 1.6rem;
-
     padding: 1.4rem 1.5rem;
-
     border-radius: 12px;
-
     background: linear-gradient(
         110deg,
         #dceff8,
@@ -392,7 +290,6 @@ main,
 
 .adventure-section h2 {
     color: var(--cor-primaria);
-
     font-size: clamp(1.45rem, 3.5vw, 2.2rem);
 }
 
@@ -400,53 +297,32 @@ main,
     background-color: var(--cor-secundaria);
 }
 
-
-/* =========================================
-   12. RODAPÉ
-========================================= */
-
+/* 12. RODAPÉ */
 .site-footer {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 1.5rem;
-
-    padding: 1.5rem 0;
-
+    padding: 1.5rem;
     border-top: 5px solid var(--cor-secundaria);
-
     color: #ffffff;
     background-color: var(--cor-primaria);
-
-    box-shadow: 0 0 0 100vmax var(--cor-primaria);
-
-    clip-path: inset(0 -100vmax);
 }
 
 .site-footer p {
     font-size: 0.82rem;
 }
 
-
-/* =========================================
-   13. REDES SOCIAIS
-========================================= */
-
+/* 13. REDES SOCIAIS */
 .redes-sociais {
     display: flex;
-
     align-items: center;
-
     gap: 0.8rem;
 }
 
 .redes-sociais a {
     display: inline-flex;
-
     text-decoration: none;
-
     transition: transform 0.2s ease;
 }
 
@@ -455,19 +331,12 @@ main,
 }
 
 .redes-sociais img {
-    display: block;
-
     width: 34px;
     height: 34px;
 }
 
-
-/* =========================================
-   14. RESPONSIVIDADE - TABLETS
-========================================= */
-
+/* 14. RESPONSIVIDADE - TABLETS */
 @media (max-width: 760px) {
-
     .site-header {
         flex-direction: column;
         gap: 0.8rem;
@@ -520,13 +389,8 @@ main,
     }
 }
 
-
-/* =========================================
-   15. RESPONSIVIDADE - CELULARES
-========================================= */
-
+/* 15. RESPONSIVIDADE - CELULARES */
 @media (max-width: 430px) {
-
     .brand img {
         width: 68px;
         height: 58px;
